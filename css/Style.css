@@ -311,6 +311,7 @@ section .container .owl-nav{
 main .site-content{
     display: grid;
     grid-template-columns: 70% 30%;
+    margin-top: -150px;
 }
 
 main .post-content{
@@ -574,6 +575,12 @@ footer.footer .move-up span:hover{
         grid-template-columns: repeat(2, 1fr);
     }
 
+    main .site-content{
+        grid-template-columns: 100%;
+        margin-top: -150px;
+
+    }
+
 }
 
 /*      x       Viewport less then or equal to 1130px    x     */
@@ -608,10 +615,7 @@ footer.footer .move-up span:hover{
 /*              Viewport less then or equal to 520px            */
 
 @media only screen and (max-width: 520px){
-    main .blog{
-        height: 125vh;
-    }
-
+ 
     main .site-content{
         grid-template-columns: 100%;
         margin-top: -150px;
