@@ -1,0 +1,43 @@
+/*  font-family: Abel  */
+@font-face {
+    font-family: Abel;
+    src: url('../fonts/Abel/Abel-Regular.ttf');
+}
+
+/*  font-family: Anton  */
+@font-face {
+    font-family: Anton;
+    src: url('../fonts/Anton/Anton-Regular.ttf');
+}
+
+/*  font-family: Josefin_Sans  */
+@font-face {
+    font-family: Josefin_Sans;
+    src: url('../fonts/Josefin_Sans/JosefinSans-VariableFont_wght.ttf');
+}
+
+/*  font-family: Lexend_Deca  */
+@font-face {
+    font-family: Lexend_Deca;
+    src: url('../fonts/Lexend_Deca/LexendDeca-Regular.ttf');
+}
+
+/*  font-family: Livvic  */
+@font-face {
+    font-family: Livvic;
+    src: url('../fonts/Livvic/Livvic-Regular.ttf');
+}
+
+/*  font-family: Right_Grotesk  */
+
+@font-face {
+    font-family: Right_Grotesk;
+    src: url('../fonts/Right_Grotesk/RightGrotesk-Medium.otf');
+}
+
+/*  font-family: Kaufmann-Bold  */
+
+@font-face {
+    font-family: Kaufmann-Bold;
+    src: url('../fonts/Kaufmann-Bold.ttf');
+}
