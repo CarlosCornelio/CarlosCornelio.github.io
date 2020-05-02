@@ -591,7 +591,7 @@ footer.footer .move-up span:hover{
 
     main .site-content{
         grid-template-columns: 100%;
-        margin-top: -250px;
+        margin-top: -150px;
 
     }
 
@@ -610,6 +610,12 @@ footer.footer .move-up span:hover{
 @media only screen and (max-width: 520px){
     main .blog{
         height: 125vh;
+    }
+
+    main .site-content{
+        grid-template-columns: 100%;
+        margin-top: -150px;
+
     }
 
     .site-content .post-content > .post-image .post-info{
