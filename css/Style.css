@@ -378,7 +378,7 @@ main .post-content .post-title a{
     padding: .6rem .9rem;
     border-radius: 2rem;
     margin: 0 .3rem;
-    font-family: var(--Lexend_Deca);
+    font-family: var(--Abel);
 
 }
 
@@ -460,7 +460,7 @@ main .post-content .post-title a{
 .site-content .sidebar .popular-tags{
     padding: 5rem 0;
     color: var(--text-gray);
-    margin-top: -2rem;
+    margin-top: 45px;
 }
 
 .site-content .sidebar .popular-tags .tags .tag{
