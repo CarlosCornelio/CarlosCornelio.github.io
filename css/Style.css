@@ -197,11 +197,9 @@ main .blog-content .blog-title{
 
 
 .site-title{
-    background-image: url("../assets/Background-image.jpg");
-    background-size: cover;
     height: 89vh;
     display: flex;
-    justify-content: center;
+    margin-left: 15vh;
     position: relative;
     overflow: hidden;
 }
@@ -209,7 +207,7 @@ main .blog-content .blog-title{
 .site-title .site-background{
     padding-top: flex;
     text-align: center;
-    margin-top: 30vh;
+    margin-top: 25vh;
 }
 
 .site-title h1, h3{
@@ -308,7 +306,7 @@ section .container .owl-nav{
 main .site-content{
     display: grid;
     grid-template-columns: 70% 30%;
-    margin-top: -150px;
+    margin-top: -10vh;
 }
 
 main .post-content{
@@ -603,6 +601,13 @@ footer.footer .move-up span:hover{
         grid-template-columns: repeat(1, 1fr);
     }
 
+    .site-title{
+        justify-content: center;
+    }
+
+    .site-title .site-background{
+        margin-top: 10vh;
+    }
 }
 
 
@@ -634,6 +639,14 @@ footer.footer .move-up span:hover{
 
     nav .toggle-collapse{
         width: 80% !important;
+    }
+
+    .site-title{
+        justify-content: center;
+    }
+
+    .site-title .site-background{
+        margin-top: 10vh;
     }
 
 }
