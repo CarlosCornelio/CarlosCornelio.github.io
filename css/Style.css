@@ -24,11 +24,7 @@ html, body{
     /*      theme font-family   */
     --Abel: 'Abel', cursive;
     --Anton: 'Anton', cursive;
-    --Josefin_Sans: 'Josefin', cursive;
-    --Lexend_Deca: 'Lexend', cursive;
-    --Livvic: 'Livvic', cursive;
     --Right_Grotesk: 'Right_Grotesk', cursive;
-    --Kaufmann-Bold: 'Kaufmann-Bold', cursive;
 }
 
 
@@ -74,7 +70,7 @@ button.btn{
     border-radius: 2rem;
     padding: 1rem 3rem;
     font-size: 1rem;
-    font-family: var(--Livvic);
+    font-family: var(--Abel);
     cursor: pointer;
     color: white;
 }
@@ -195,19 +191,21 @@ main .blog-content .blog-title{
 
 /* --------------- Site title ---------------- */
 
-
 .site-title{
-    height: 89vh;
+    background: url('../assets/background.png');
+    background-position: right;
+    margin-right: -5vh;
+    background-size: 73%;
+    background-repeat: no-repeat;
+    height: 83vh;
     display: flex;
-    margin-left: 15vh;
-    position: relative;
-    overflow: hidden;
+    margin-left: 7vh;
 }
 
 .site-title .site-background{
     padding-top: flex;
     text-align: center;
-    margin-top: 25vh;
+    margin-top: 18vh;
 }
 
 .site-title h1, h3{
@@ -223,7 +221,6 @@ main .blog-content .blog-title{
 
 .site-title .btn:hover{
     background: transparent;
-    border: 1px solid var(--white);
     color: var(--white);
     box-shadow: none;
 }
@@ -237,7 +234,6 @@ main .site-title .btn:hover{
 /* --------------- Blog Carousel ------------ */
 
 main .blog{
-    
     background-repeat: no-repeat;
     background-position: right;
     height: 100vh;
@@ -388,7 +384,7 @@ main .post-content .post-title a{
 /* --------------- Sidebar ----------------------- */
 
 .site-content > .sidebar .category-list{
-    font-family: var(--Livvic);   
+    font-family: var(--Abel);   
 }
 
 .site-content > .sidebar .category-list .list-items{
@@ -441,7 +437,7 @@ main .post-content .post-title a{
     width: 80%;
     height: 1.9rem;
     padding: .3rem .5rem;
-    font-family: var(--Lexend_Deca);
+    font-family: var(--Abel);
     font-size: 1rem;
 }
 
@@ -455,7 +451,7 @@ main .post-content .post-title a{
 .site-content .sidebar .popular-tags{
     padding: 5rem 0;
     color: var(--text-gray);
-    margin-top: 45px;
+    margin-top: 60px;
 }
 
 .site-content .sidebar .popular-tags .tags .tag{
@@ -504,7 +500,7 @@ footer.footer .newsletter .form-element input{
     border: none;
     background: transparent;
     color: white;
-    font-family: var(--Josefin);
+    font-family: var(--Abel);
     font-size: 1rem;
     width: 74%;
 }
@@ -529,7 +525,7 @@ footer.footer .follow div i{
 
 footer.footer .rights{
     justify-content: center;
-    font-family: var(--Josefin_Sans);
+    font-family: var(--Abel);
 }
 
 footer.footer .rights h4 a{
@@ -572,9 +568,15 @@ footer.footer .move-up span:hover{
 
     main .site-content{
         grid-template-columns: 100%;
-        margin-top: -20vh;
+        margin-top: -10vh;
 
     }
+
+    .site-title{
+        margin-left: 7vh;
+        background-size: 90%;
+    }
+
 
 }
 
@@ -593,7 +595,7 @@ footer.footer .move-up span:hover{
 
     main .site-content{
         grid-template-columns: 100%;
-        margin-top: -10vh;
+        margin-top: -17vh;
 
     }
 
@@ -602,11 +604,11 @@ footer.footer .move-up span:hover{
     }
 
     .site-title{
-        justify-content: center;
+        margin-left: 5vh;
     }
 
     .site-title .site-background{
-        margin-top: 10vh;
+        margin-top: 25vh;
     }
 }
 
@@ -620,7 +622,7 @@ footer.footer .move-up span:hover{
  
     main .site-content{
         grid-template-columns: 100%;
-        margin-top: -10vh;
+        margin-top: -13vh;
 
     }
 
@@ -642,11 +644,12 @@ footer.footer .move-up span:hover{
     }
 
     .site-title{
-        justify-content: center;
+        margin-left: 1vh;
     }
 
     .site-title .site-background{
-        margin-top: 10vh;
+        margin-top: 20vh;
+        
     }
 
 }
