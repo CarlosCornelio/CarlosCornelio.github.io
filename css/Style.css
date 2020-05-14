@@ -127,7 +127,10 @@ main .blog-content .blog-title{
     display: flex;
     justify-content: flex-end;
     padding: 1.7rem 0;
+}
 
+.nav .toggle-collapse:active{
+    -webkit-tap-highlight-color: transparent;
 }
 
 .nav .toggle-collapse .toggle-icons i{
@@ -222,11 +225,18 @@ main .blog-content .blog-title{
 .site-title .btn:hover{
     background: transparent;
     color: var(--white);
-    box-shadow: none;
 }
 
 main .site-title .btn:hover{
     background-color: #b6100d;
+}
+
+main .site-title .btn:active{
+    -webkit-tap-highlight-color: transparent;
+}
+
+main .site-title .btn:focus{
+    outline: 0;
 }
 
 /* --------x------ Site title --------x------- */
@@ -354,8 +364,18 @@ main .post-content .post-title a{
     padding: .7rem 1.5rem;
     background: var(--chili);
     color: white;
-    box-shadow: none;
-    outline: none;
+}
+
+.site-content .post-content .post-title .post-btn:active{
+    -webkit-tap-highlight-color: transparent;
+}
+
+.site-content .post-content .post-title .post-btn:focus{
+    outline: 0;
+}
+
+.site-content .post-content .post-title .post-btn:hover{
+    background-color: #b6100d;
 }
 
 .site-content .pagination{
@@ -552,44 +572,92 @@ footer.footer .move-up span:hover{
 /*              Viewport less then or equal to 1130px            */
 
 @media only screen and (max-width: 1130px){
-    .site-content .post-content > .post-image .post-info{
-        left: 2rem !important;
-        bottom: 1.2rem !important;
-        border-radius: 0% !important;
-    }
-
-    .site-content .sidebar .popular-post .post-info{
-        display: none !important;
-    }
-
-    footer.footer .container{
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    main .site-content{
-        grid-template-columns: 100%;
-        margin-top: -10vh;
-
-    }
-
-    .site-title{
-        margin-left: 7vh;
-        background-size: 65%;
-    }
-
-    .site-title .site-background{
-        margin-top: 22vh;
-    }
+    @media only screen and (max-width: 1130px){
+        .site-content .post-content > .post-image .post-info{
+            left: 2rem !important;
+            bottom: 1.2rem !important;
+            border-radius: 0% !important;
+        }
+    
+        .site-content .sidebar .popular-post .post-info{
+            display: none !important;
+        }
+    
+        footer.footer .container{
+            grid-template-columns: repeat(2, 1fr);
+        }
+    
+        main .site-content{
+            grid-template-columns: 100%;
+            margin-top: -10vh;
+    
+        }
+    
+        .site-title{
+            margin-left: 7vh;
+            background-size: 65%;
+        }
+    
+        .site-title .site-background{
+            margin-top: 22vh;
+        }
 
 }
 
 /*      x       Viewport less then or equal to 1130px    x     */
+
+/*              Viewport less then or equal to 1024px            */
+
+    @media only screen and (max-width: 1024px){
+        .nav .nav-menu, .nav .nav-items{
+            flex-direction: column;
+            height: -10rem;
+        }
+
+        .nav .toggle-collapse{
+            display: initial;
+        }
+
+        main .site-content{
+            grid-template-columns: 100%;
+            margin-top: -40vh;
+
+        }
+
+        footer.footer .container{
+            grid-template-columns: repeat(1, 1fr);
+        }
+
+        .site-title{
+            background-position: top 25vh left 15.5vh;
+            background-size: 50%;
+            margin-left:3.5vh;
+        }
+
+        .site-title .site-background{
+            margin-top: 3.5vh;
+            margin-left: 21vh;
+        }
+
+        .nav{
+            min-height: 6.5vh;
+        }
+    
+        main .blog{
+            margin-top: -28vh;
+        }
+
+    }
+
+/*        x      Viewport less then or equal to 1024px       x     */
+
 
 /*              Viewport less then or equal to 768px            */
 
 @media only screen and (max-width: 768px){
     .nav .nav-menu, .nav .nav-items{
         flex-direction: column;
+        height: -10rem;
     }
 
     .nav .toggle-collapse{
@@ -607,13 +675,19 @@ footer.footer .move-up span:hover{
     }
 
     .site-title{
-        background-position: top 45vh left 13vh;
-        background-size: 62%;
+        background-position: top 35vh left 5.2vh;
+        background-size: 75%;
+        margin-left:3.5vh;
+        margin-bottom: -10vh;
     }
 
     .site-title .site-background{
         margin-top: 5vh;
         margin-left: 17vh;
+    }
+
+    .nav{
+        min-height: 8vh;
     }
 
 }
@@ -652,10 +726,7 @@ footer.footer .move-up span:hover{
         margin-left: 17vh;
     }
 
-    
 }
-
-
 
 /*        x      Viewport less then or equal to 750px       x     */
 
@@ -698,8 +769,6 @@ footer.footer .move-up span:hover{
     .site-title .site-background{
         margin-left: auto;
         margin-right: auto;
-       
-
     }
     
 }
@@ -709,6 +778,51 @@ footer.footer .move-up span:hover{
 /*              Viewport less then or equal to 414px            */
 
 @media only screen and (max-width: 414px){
+ 
+    main .site-content{
+        grid-template-columns: 100%;
+        margin-top: -15vh;
+
+    }
+
+    .site-content .post-content > .post-image .post-info{
+        display: none;
+    }
+
+    footer.footer .container > div{
+        padding:  1rem .9rem !important;
+    }
+
+    footer .rights{
+        padding: 0 1.4rem;
+        text-align: center;
+    }
+
+    nav .toggle-collapse{
+        width: 80% !important;
+    }
+
+    .site-title{
+        margin-left: auto;
+        margin-right: auto;
+        background-position: top 45vh center;
+        background-size: 80%;
+        margin-top: 5vh;
+        margin-bottom: 5vh;
+    }
+
+    .site-title .site-background{
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+}
+
+/*        x      Viewport less then or equal to 414px       x     */
+
+/*              Viewport less then or equal to 411px            */
+
+@media only screen and (max-width: 411px){
  
     main .site-content{
         grid-template-columns: 100%;
@@ -739,18 +853,17 @@ footer.footer .move-up span:hover{
         background-position: top 45vh center;
         background-size: 80%;
         margin-top: 5vh;
+        margin-bottom: 5vh;
     }
 
     .site-title .site-background{
         margin-left: auto;
         margin-right: auto;
-       
-
     }
     
 }
 
-/*        x      Viewport less then or equal to 414px       x     */
+/*        x      Viewport less then or equal to 411px       x     */
 
 /*              Viewport less then or equal to 375px            */
 
@@ -758,7 +871,55 @@ footer.footer .move-up span:hover{
  
     main .site-content{
         grid-template-columns: 100%;
-        margin-top: -25vh;
+        margin-top: -28vh;
+
+    }
+
+    .site-content .post-content > .post-image .post-info{
+        display: none;
+    }
+
+    footer.footer .container > div{
+        padding:  1rem .9rem !important;
+    }
+
+    footer .rights{
+        padding: 0 1.4rem;
+        text-align: center;
+    }
+
+    nav .toggle-collapse{
+        width: 80% !important;
+    }
+
+    .site-title{
+        margin-left: auto;
+        margin-right: auto;
+        background-position: top 45vh center;
+        background-size: 95%;
+        margin-top: 7vh;
+    }
+
+    .site-title .site-background{
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    p{
+        font-size: 15px;
+        margin-left: 1vh;
+    }
+}
+
+/*        x      Viewport less then or equal to 375px       x     */
+
+/*              Viewport less then or equal to 360px            */
+
+@media only screen and (max-width: 360px){
+ 
+    main .site-content{
+        grid-template-columns: 100%;
+        margin-top: -13vh;
 
     }
 
@@ -784,7 +945,8 @@ footer.footer .move-up span:hover{
         margin-right: auto;
         background-position: top 50vh center;
         background-size: 95%;
-        margin-top: 1vh;
+        margin-top: 3vh;
+        margin-bottom: 3vh;
     }
 
     .site-title .site-background{
@@ -798,15 +960,15 @@ footer.footer .move-up span:hover{
     }
 }
 
-/*        x      Viewport less then or equal to 375px       x     */
+/*        x      Viewport less then or equal to 360px       x     */
 
-/*              Viewport less then or equal to 320px            */
+/*             Viewport less then or equal to 320px           */
 
 @media only screen and (max-width: 320px){
  
     main .site-content{
         grid-template-columns: 100%;
-        margin-top: 0vh;
+        margin-top: -2vh;
 
     }
 
@@ -844,5 +1006,5 @@ footer.footer .move-up span:hover{
         display: none;
     }
 }
-
-/*        x      Viewport less then or equal to 320px       x     */
+}
+/*        X      Viewport less then or equal to 320px    X    */
