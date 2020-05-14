@@ -620,7 +620,7 @@ footer.footer .move-up span:hover{
 
         main .site-content{
             grid-template-columns: 100%;
-            margin-top: -40vh;
+            margin-top: -55vh;
 
         }
 
@@ -678,7 +678,7 @@ footer.footer .move-up span:hover{
         background-position: top 35vh left 5.2vh;
         background-size: 75%;
         margin-left:3.5vh;
-        margin-bottom: -10vh;
+        margin-bottom: 20vh;
     }
 
     .site-title .site-background{
@@ -808,7 +808,7 @@ footer.footer .move-up span:hover{
         background-position: top 45vh center;
         background-size: 80%;
         margin-top: 5vh;
-        margin-bottom: 5vh;
+        margin-bottom: 26vh;
     }
 
     .site-title .site-background{
@@ -853,7 +853,7 @@ footer.footer .move-up span:hover{
         background-position: top 45vh center;
         background-size: 80%;
         margin-top: 5vh;
-        margin-bottom: 5vh;
+        margin-bottom: 26vh;
     }
 
     .site-title .site-background{
@@ -895,9 +895,10 @@ footer.footer .move-up span:hover{
     .site-title{
         margin-left: auto;
         margin-right: auto;
-        background-position: top 45vh center;
+        background-position: top 47vh center;
         background-size: 95%;
-        margin-top: 7vh;
+        margin-top: 3.5vh;
+        margin-bottom: 30vh;
     }
 
     .site-title .site-background{
@@ -946,7 +947,7 @@ footer.footer .move-up span:hover{
         background-position: top 50vh center;
         background-size: 95%;
         margin-top: 3vh;
-        margin-bottom: 3vh;
+        margin-bottom: 27vh;
     }
 
     .site-title .site-background{
@@ -1002,7 +1003,7 @@ footer.footer .move-up span:hover{
         margin-right: auto;
     }
     
-    .important{
+    .page{
         display: none;
     }
 }
